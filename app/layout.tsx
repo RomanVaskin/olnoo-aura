@@ -16,9 +16,9 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'OLNOO Property — Платформа загородной недвижимости',
+  title: 'AURA ESTATES — Платформа загородной недвижимости',
   description:
-    'Посёлки, дома и участки. Лиды, CRM и продвижение — в одной системе. Премиальная платформа загородной недвижимости OLNOO.',
+    'Посёлки, дома и участки. Лиды, CRM и продвижение — в одной системе. Премиальная платформа загородной недвижимости AURA ESTATES.',
   generator: 'v0.app',
 }
 

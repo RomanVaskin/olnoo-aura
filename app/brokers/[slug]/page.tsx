@@ -46,7 +46,7 @@ export default async function BrokerPage({
             </p>
             <p className="mt-5 max-w-lg leading-relaxed text-muted-foreground">
               Помогаю подобрать дом или участок в загородных посёлках: от первого запроса
-              до сделки. Работаю с проверенными застройщиками платформы OLNOO.
+              до сделки. Работаю с проверенными застройщиками платформы AURA ESTATES.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <button className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90">

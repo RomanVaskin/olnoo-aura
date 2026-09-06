@@ -37,9 +37,9 @@ export function SiteFooter() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="flex items-baseline gap-2">
-              <span className="text-lg font-semibold tracking-tight">OLNOO</span>
+              <span className="text-lg font-semibold tracking-tight">AURA</span>
               <span className="text-lg font-light tracking-tight text-muted-foreground">
-                Property
+                ESTATES
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
@@ -67,7 +67,7 @@ export function SiteFooter() {
           ))}
         </div>
         <div className="mt-14 flex flex-col gap-3 border-t border-border pt-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} OLNOO Property. Все права защищены.</p>
+          <p>© {new Date().getFullYear()} AURA ESTATES. Все права защищены.</p>
           <p>Загородная недвижимость проще.</p>
         </div>
       </div>

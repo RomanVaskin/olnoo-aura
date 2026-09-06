@@ -20,10 +20,10 @@ import { SerifAmount } from '@/components/dashboard/widgets'
 /* ------------------------------------------------------------------ */
 
 const deck = {
-  brand: 'OLNOO Property',
+  brand: 'AURA ESTATES',
   cover: {
     kicker: 'Презентация для девелоперов и брокеров',
-    title: 'OLNOO Property',
+    title: 'AURA ESTATES',
     subtitle: 'Платформа загородной недвижимости',
     image: '/images/hero-estate.png',
   },
@@ -221,7 +221,7 @@ export function PresentationDeck() {
         <SlideShell
           id="slide-0"
           index={1}
-          background={{ src: deck.cover.image, alt: 'Загородная резиденция OLNOO Property' }}
+          background={{ src: deck.cover.image, alt: 'Загородная резиденция AURA ESTATES' }}
         >
           <Kicker>{deck.cover.kicker}</Kicker>
           <h1 className="max-w-4xl font-serif text-6xl leading-[0.95] tracking-tight text-balance md:text-8xl">

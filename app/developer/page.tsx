@@ -52,7 +52,7 @@ const topSettlements = [
 ]
 
 const sources = [
-  { label: 'Каталог OLNOO', value: '42%', percent: 42 },
+  { label: 'Каталог AURA ESTATES', value: '42%', percent: 42 },
   { label: 'Реклама / Директ', value: '28%', percent: 28 },
   { label: 'SEO / органика', value: '18%', percent: 18 },
   { label: 'Рекомендации', value: '12%', percent: 12 },

@@ -375,8 +375,8 @@ export function SettlementDetailView({
             </h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
               Оставьте контакты — менеджер пришлёт актуальные цены, планировки выбранной модели
-              и согласует удобное время просмотра. Заявка автоматически попадает в CRM OLNOO
-              Property.
+              и согласует удобное время просмотра. Заявка автоматически попадает в CRM AURA
+              ESTATES.
             </p>
             <div className="mt-8 flex flex-col gap-3">
               {[

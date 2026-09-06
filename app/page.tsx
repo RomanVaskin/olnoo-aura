@@ -77,7 +77,7 @@ export default function HomePage() {
           <div className="absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-7xl px-5 pb-14 lg:px-8 lg:pb-20">
               <p className="text-xs uppercase tracking-[0.22em] text-white/80">
-                OLNOO Property · Загородная недвижимость проще
+                AURA ESTATES · Загородная недвижимость проще
               </p>
               <h1 className="mt-5 max-w-3xl font-serif text-4xl leading-[1.05] text-balance text-white sm:text-5xl lg:text-6xl">
                 Платформа загородной недвижимости - тест
@@ -182,7 +182,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
-            <p className="eyebrow">Почему OLNOO Property</p>
+            <p className="eyebrow">Почему AURA ESTATES</p>
             <h2 className="mt-4 font-serif text-3xl leading-tight text-balance lg:text-4xl">
               Не классифайд, а продукт для загородной недвижимости
             </h2>
