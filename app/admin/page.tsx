@@ -53,7 +53,7 @@ const payments = [
 
 export default function AdminCabinet() {
   return (
-    <DashboardShell role="Администратор" name="OLNOO Admin" initials="OA" nav={nav}>
+    <DashboardShell role="Администратор" name="AURA Admin" initials="AA" nav={nav}>
       <div className="mx-auto max-w-7xl px-5 py-8 lg:px-8">
         <PageTitle
           title="Администрирование платформы"

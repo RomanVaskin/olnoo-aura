@@ -19,8 +19,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
         <Link href="/" className="flex items-baseline gap-2">
-          <span className="text-lg font-semibold tracking-tight">OLNOO</span>
-          <span className="text-lg font-light tracking-tight text-muted-foreground">Property</span>
+          <span className="text-lg font-semibold tracking-tight">AURA</span>
+          <span className="text-lg font-light tracking-tight text-muted-foreground">ESTATES</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

@@ -26,9 +26,9 @@ export function DashboardShell({
     <div className="flex h-full flex-col">
       <div className="flex items-center justify-between px-5 py-5">
         <Link href="/" className="flex items-baseline gap-1.5">
-          <span className="text-base font-semibold tracking-tight">OLNOO</span>
+          <span className="text-base font-semibold tracking-tight">AURA</span>
           <span className="text-base font-light tracking-tight text-muted-foreground">
-            Property
+            ESTATES
           </span>
         </Link>
         <button className="lg:hidden" onClick={() => setOpen(false)} aria-label="Закрыть">
