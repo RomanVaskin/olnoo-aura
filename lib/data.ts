@@ -59,7 +59,7 @@ export const settlements: Settlement[] = [
     priceFrom: 'от 2,8 млн ₽',
     distance: '50 км от города',
     location: 'первая линия воды',
-    image: '/images/plot-2.png',
+    image: '/images/ozernyy-masterplan-hero.jpg',
     houses: 0,
     plots: 54,
   },
