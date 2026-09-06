@@ -20,15 +20,22 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -H "${{ secrets.KZ_HOST }}" >> ~/.ssh/known_hosts
 
-      - name: Deploy to server
+      - name: Deploy Aura
         timeout-minutes: 10
         run: |
           ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no "${{ secrets.KZ_USER }}@${{ secrets.KZ_HOST }}" '
             set -e
-            cd /opt/olnoo/projects/olnoo-property
+
+            cd /opt/olnoo/projects/olnoo-aura
+
+            cp public/video/hero-property.mp4 /tmp/hero-property.mp4
+
             git checkout main
             git pull origin main
-            pnpm install --frozen-lockfile
-            pnpm build
-            systemctl restart olnoo-property
+
+            cp /tmp/hero-property.mp4 public/video/hero-property.mp4
+
+            npm install
+            npm run build
+            systemctl restart olnoo-aura
           '
