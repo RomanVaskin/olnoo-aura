@@ -1,7 +1,13 @@
 import Image from 'next/image'
 import type { Listing } from '@/lib/data'
 
-export function ListingCard({ listing }: { listing: Listing }) {
+export function ListingCard({
+  listing,
+  imageClassName,
+}: {
+  listing: Listing
+  imageClassName?: string
+}) {
   return (
     <div className="group overflow-hidden rounded-lg border border-border bg-card transition-colors hover:border-foreground/30">
       <div className="relative aspect-[4/3] overflow-hidden">
@@ -10,7 +16,9 @@ export function ListingCard({ listing }: { listing: Listing }) {
           alt={listing.title}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          className={
+            imageClassName ?? 'object-cover transition-transform duration-700 group-hover:scale-105'
+          }
         />
         <span className="absolute left-4 top-4 rounded-full bg-background/90 px-3 py-1 text-xs font-medium backdrop-blur">
           {listing.kind}

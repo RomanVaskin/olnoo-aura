@@ -272,7 +272,19 @@ export default async function SettlementPage({
           <h2 className="font-serif text-3xl">Доступные участки</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {plots.map((p) => (
-              <ListingCard key={p.id} listing={p} />
+              <ListingCard
+                key={p.id}
+                listing={
+                  p.id === 'p2' && slug === 'ozernyy'
+                    ? { ...p, image: '/images/ozernyy-first-line-plots.webp' }
+                    : p
+                }
+                imageClassName={
+                  p.id === 'p2' && slug === 'ozernyy'
+                    ? 'object-contain bg-secondary transition-transform duration-700 group-hover:scale-105'
+                    : undefined
+                }
+              />
             ))}
           </div>
         </div>
