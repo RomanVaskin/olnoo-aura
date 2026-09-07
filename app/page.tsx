@@ -68,7 +68,6 @@ export default function HomePage() {
             muted
             loop
             playsInline
-            poster="/images/hero-estate.png"
             className="absolute inset-0 h-full w-full object-cover"
           >
             <source src="/video/hero-property.mp4" type="video/mp4" />
