@@ -161,13 +161,13 @@ export function SettlementDetailView({
         <p className="eyebrow">Генеральный план</p>
         <h2 className="mt-3 font-serif text-3xl text-balance lg:text-4xl">Мастер-план посёлка</h2>
         <div className="mt-8 grid gap-8 lg:grid-cols-[1.5fr_1fr] lg:gap-12">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border bg-secondary">
             <Image
               src={detail.masterplan.image || '/placeholder.svg'}
               alt="Генеральный план посёлка Малое Исаково"
               fill
               sizes="(max-width: 1024px) 100vw, 60vw"
-              className="object-cover"
+              className="object-contain"
             />
           </div>
           <ul className="flex flex-col justify-center divide-y divide-border">

@@ -195,7 +195,7 @@ export const settlementDetails: Record<string, SettlementDetail> = {
       '/images/road-entrance.png',
     ],
     masterplan: {
-      image: '/images/mi-masterplan.png',
+      image: '/images/maloe-isakovo-masterplan.webp',
       zones: [
         { label: 'Первая очередь', note: 'Резиденции у входной группы' },
         { label: 'Вторая очередь', note: 'Кварталы в глубине леса' },
