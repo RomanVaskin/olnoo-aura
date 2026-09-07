@@ -171,7 +171,17 @@ export default function HomePage() {
               <ListingCard key={h.id} listing={h} />
             ))}
             {plots.slice(0, 3).map((p) => (
-              <ListingCard key={p.id} listing={p} />
+              <ListingCard
+                key={p.id}
+                listing={
+                  p.id === 'p2' ? { ...p, image: '/images/ozernyy-first-line-plots.webp' } : p
+                }
+                imageClassName={
+                  p.id === 'p2'
+                    ? 'object-contain bg-secondary transition-transform duration-700 group-hover:scale-105'
+                    : undefined
+                }
+              />
             ))}
           </div>
         </div>
