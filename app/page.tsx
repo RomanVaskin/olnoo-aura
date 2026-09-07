@@ -201,8 +201,8 @@ export default function HomePage() {
             </p>
             <div className="mt-8 overflow-hidden rounded-lg border border-border">
               <Image
-                src="/images/road-entrance.png"
-                alt="Въезд в загородный посёлок"
+                src="/images/why-aura-estates.webp"
+                alt="Сделка с брокером AURA ESTATES на фоне загородного дома"
                 width={640}
                 height={420}
                 className="h-auto w-full object-cover"
