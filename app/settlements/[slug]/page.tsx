@@ -176,18 +176,24 @@ export default async function SettlementPage({
               <div className="mt-4 overflow-hidden rounded-lg border border-border">
                 <div className="relative aspect-[16/7]">
                   <Image
-                    src="/images/plot-2.png"
-                    alt="Расположение посёлка на карте"
+                    src={slug === 'ozernyy' ? '/images/ozernyy-masterplan.webp' : '/images/plot-2.png'}
+                    alt={
+                      slug === 'ozernyy'
+                        ? 'Генплан посёлка Озёрный'
+                        : 'Расположение посёлка на карте'
+                    }
                     fill
                     sizes="100vw"
-                    className="object-cover"
+                    className={slug === 'ozernyy' ? 'object-contain bg-secondary' : 'object-cover'}
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-background/30">
-                    <span className="flex items-center gap-2 rounded-full bg-background px-4 py-2 text-sm font-medium shadow-sm">
-                      <MapPin className="h-4 w-4" />
-                      {settlement.location} · {settlement.distance}
-                    </span>
-                  </div>
+                  {slug !== 'ozernyy' && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-background/30">
+                      <span className="flex items-center gap-2 rounded-full bg-background px-4 py-2 text-sm font-medium shadow-sm">
+                        <MapPin className="h-4 w-4" />
+                        {settlement.location} · {settlement.distance}
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
