@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'AURA ESTATES — Платформа загородной недвижимости',
+  title: 'ТЕСТ AURA ESTATES — Платформа загородной недвижимости',
   description:
     'Посёлки, дома и участки. Лиды, CRM и продвижение — в одной системе. Премиальная платформа загородной недвижимости AURA ESTATES.',
   generator: 'v0.app',
