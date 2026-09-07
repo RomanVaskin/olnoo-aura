@@ -117,7 +117,7 @@ export function SettlementDetailView({
             ))}
           </div>
           <div className="grid grid-cols-2 gap-3">
-            {detail.gallery.map((src, i) => (
+            {detail.aboutGallery.map((src, i) => (
               <div
                 key={src}
                 className={`relative overflow-hidden rounded-lg ${

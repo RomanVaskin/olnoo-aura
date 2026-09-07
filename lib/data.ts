@@ -159,6 +159,7 @@ export type SettlementDetail = {
   scale: string
   intro: string[]
   gallery: string[]
+  aboutGallery: string[]
   masterplan: {
     image: string
     zones: { label: string; note: string }[]
@@ -193,6 +194,12 @@ export const settlementDetails: Record<string, SettlementDetail> = {
       '/images/nature-lake.png',
       '/images/interior.png',
       '/images/road-entrance.png',
+    ],
+    aboutGallery: [
+      '/images/maloe-isakovo-about-01.webp',
+      '/images/maloe-isakovo-about-02.webp',
+      '/images/maloe-isakovo-about-03.webp',
+      '/images/maloe-isakovo-about-04.webp',
     ],
     masterplan: {
       image: '/images/maloe-isakovo-masterplan.webp',
