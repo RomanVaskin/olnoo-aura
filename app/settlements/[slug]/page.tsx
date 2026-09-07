@@ -25,6 +25,12 @@ const galleryBySlug: Record<string, string[]> = {
     '/IMG_5784.jpeg',
     '/IMG_5785.jpeg',
   ],
+  ozernyy: [
+    '/images/ozernyy-gallery-01-aerial.webp',
+    '/images/ozernyy-gallery-02-entrance.webp',
+    '/images/ozernyy-gallery-03-street.webp',
+    '/images/ozernyy-gallery-04-fence.webp',
+  ],
 }
 
 const benefits = [
