@@ -152,7 +152,14 @@ export default function HomePage() {
         />
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {settlements.map((s) => (
-            <SettlementCard key={s.slug} settlement={s} />
+            <SettlementCard
+              key={s.slug}
+              settlement={
+                s.slug === 'maloe-isakovo'
+                  ? { ...s, image: '/images/maloe-isakovo-hero.webp' }
+                  : s
+              }
+            />
           ))}
         </div>
       </section>
