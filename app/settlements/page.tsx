@@ -20,7 +20,14 @@ export default function SettlementsPage() {
       <section className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {settlements.map((s) => (
-            <SettlementCard key={s.slug} settlement={s} />
+            <SettlementCard
+              key={s.slug}
+              settlement={
+                s.slug === 'maloe-isakovo'
+                  ? { ...s, image: '/images/maloe-isakovo-overview.webp' }
+                  : s
+              }
+            />
           ))}
         </div>
       </section>
