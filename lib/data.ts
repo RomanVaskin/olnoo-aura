@@ -234,7 +234,7 @@ export const settlementDetails: Record<string, SettlementDetail> = {
         tagline: 'Элегантная функциональность',
         area: '145 м²',
         price: 'от 19 млн ₽',
-        image: '/images/mi-nice.png',
+        image: '/images/maloe-isakovo-model-nice.webp',
         highlights: [
           'Кухня-гостиная 30.8 м²',
           'Открытая терраса 13.7 м²',
@@ -246,7 +246,7 @@ export const settlementDetails: Record<string, SettlementDetail> = {
         tagline: 'Атмосфера света',
         area: '192 м²',
         price: 'от 23 млн ₽',
-        image: '/images/mi-provence.png',
+        image: '/images/maloe-isakovo-model-provence.webp',
         highlights: [
           'Кухня-гостиная 42 м²',
           'Панорамные виды',
@@ -258,7 +258,7 @@ export const settlementDetails: Record<string, SettlementDetail> = {
         tagline: 'Безупречный статус',
         area: '240 м²',
         price: 'от 34 млн ₽',
-        image: '/images/mi-milan.png',
+        image: '/images/maloe-isakovo-model-milan.webp',
         highlights: [
           'Раздельные кухня-столовая и гостиная',
           'Гранд-терраса 33 м²',
