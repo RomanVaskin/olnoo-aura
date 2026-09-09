@@ -31,7 +31,7 @@ export const settlements: Settlement[] = [
     name: 'Сосновый Берег',
     type: 'Коттеджный посёлок',
     format: 'Дома и участки',
-    priceFrom: 'от 9,5 млн ₽',
+    priceFrom: 'от 26 млн ₽',
     distance: '28 км от города',
     location: 'у озера',
     image: '/images/settlement-3.png',
