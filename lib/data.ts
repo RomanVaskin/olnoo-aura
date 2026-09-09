@@ -200,6 +200,7 @@ export const settlementDetails: Record<string, SettlementDetail> = {
       '/images/maloe-isakovo-about-02.webp',
       '/images/maloe-isakovo-about-03.webp',
       '/images/maloe-isakovo-about-04.webp',
+      '/images/maloe-isakovo-about-05.webp',
     ],
     masterplan: {
       image: '/images/maloe-isakovo-masterplan.webp',
