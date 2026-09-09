@@ -72,7 +72,11 @@ export default async function SettlementPage({
       {/* Hero */}
       <section className="relative h-[70vh] min-h-[480px] w-full overflow-hidden">
         <Image
-          src={settlement.image || '/placeholder.svg'}
+          src={
+            slug === 'sosnovy-bereg'
+              ? '/images/sosnovy-bereg-hero.webp'
+              : settlement.image || '/placeholder.svg'
+          }
           alt={settlement.name}
           fill
           priority
