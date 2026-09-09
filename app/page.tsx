@@ -79,7 +79,7 @@ export default function HomePage() {
                 AURA ESTATES · Загородная недвижимость проще
               </p>
               <h1 className="mt-5 max-w-3xl font-serif text-4xl leading-[1.05] text-balance text-white sm:text-5xl lg:text-6xl">
-                Платформа загородной недвижимости
+                Ваш дом на Истре
               </h1>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-white/85 lg:text-lg">
                 Посёлки, дома и участки. Лиды, CRM и продвижение — в одной системе.
