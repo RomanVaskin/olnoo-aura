@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/settlements`, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE_URL}/houses`, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE_URL}/plots`, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${BASE_URL}/ru/kupit-dom-na-istre`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/presentation`, changeFrequency: 'monthly', priority: 0.5 },
   ]
 
