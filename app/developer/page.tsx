@@ -47,7 +47,7 @@ const promo = [
 
 const topSettlements = [
   { name: 'Малое Исаково', value: '1 240 просмотров', percent: 100 },
-  { name: 'Сосновый Берег', value: '980 просмотров', percent: 79 },
+  { name: 'Сосновый Бор', value: '980 просмотров', percent: 79 },
   { name: 'Лесная Усадьба', value: '610 просмотров', percent: 49 },
 ]
 
