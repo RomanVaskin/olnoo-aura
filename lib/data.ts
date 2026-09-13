@@ -190,7 +190,7 @@ export const settlementDetails: Record<string, SettlementDetail> = {
       'Каждая резиденция спроектирована как самодостаточный дом для круглогодичной жизни: панорамное остекление, продуманные планировки и качественные фасадные решения. Единая клубная концепция объединяет соседей общим уровнем комфорта.',
     ],
     gallery: [
-      '/images/maloe-isakovo-hero.webp',
+      '/images/1зона отдыха терраса.png',
       '/images/nature-lake.png',
       '/images/interior.png',
       '/images/road-entrance.png',
