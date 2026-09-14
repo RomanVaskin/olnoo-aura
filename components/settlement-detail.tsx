@@ -214,17 +214,18 @@ export function SettlementDetailView({
           </div>
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {detail.models.map((m) => (
-              <article
-                key={m.name}
-                className="flex flex-col overflow-hidden rounded-lg border border-border bg-card"
+              <Link
+                key={m.slug}
+                href={`/settlements/${settlement.slug}/residences/${m.slug}`}
+                className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card transition-colors hover:border-foreground/30"
               >
-                <div className="relative aspect-[4/3]">
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                     src={m.image || '/placeholder.svg'}
                     alt={`Резиденция ${m.name}`}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
                   />
                   <span className="absolute left-3 top-3 rounded-full bg-background/90 px-3 py-1 text-xs font-medium backdrop-blur">
                     {m.area}
@@ -244,14 +245,12 @@ export function SettlementDetailView({
                       </li>
                     ))}
                   </ul>
-                  <Link
-                    href="#lead"
-                    className="mt-6 inline-flex items-center justify-center gap-2 rounded-md border border-border px-4 py-2.5 text-sm font-medium transition-colors hover:bg-secondary"
-                  >
-                    Получить планировку {m.name}
-                  </Link>
+                  <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium">
+                    Подробнее
+                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
+                  </span>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>

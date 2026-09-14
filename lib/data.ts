@@ -143,12 +143,22 @@ export const plots: Listing[] = [
 ]
 
 export type HouseModel = {
+  slug: string
   name: string
   tagline: string
   area: string
   price: string
   image: string
   highlights: string[]
+  description?: string
+  plotArea?: string
+  bedrooms?: string
+  bathrooms?: string
+  floors?: string
+  terrace?: string
+  floorPlans?: { label: string; image: string }[]
+  architectureImages?: string[]
+  gallery?: string[]
 }
 
 export type SettlementDetail = {
@@ -230,6 +240,7 @@ export const settlementDetails: Record<string, SettlementDetail> = {
     ],
     models: [
       {
+        slug: 'nice',
         name: 'Ницца',
         tagline: 'Элегантная функциональность',
         area: '145 м²',
@@ -242,6 +253,7 @@ export const settlementDetails: Record<string, SettlementDetail> = {
         ],
       },
       {
+        slug: 'provence',
         name: 'Прованс',
         tagline: 'Атмосфера света',
         area: '192 м²',
@@ -254,6 +266,7 @@ export const settlementDetails: Record<string, SettlementDetail> = {
         ],
       },
       {
+        slug: 'milan',
         name: 'Милан',
         tagline: 'Безупречный статус',
         area: '240 м²',
