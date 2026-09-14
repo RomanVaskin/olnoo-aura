@@ -190,7 +190,7 @@ export default async function SettlementPage({
                       slug === 'ozernyy'
                         ? '/images/ozernyy-masterplan.webp'
                         : slug === 'sosnovy-bereg'
-                          ? '/images/sosnovy-bereg-masterplan.webp'
+                          ? '/images/ isakovo new.png'
                           : '/images/plot-2.png'
                     }
                     alt={
