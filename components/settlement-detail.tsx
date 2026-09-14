@@ -117,30 +117,16 @@ export function SettlementDetailView({
             ))}
           </div>
           <div className="grid grid-cols-2 gap-3">
-            <div className="col-span-2 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
-                <iframe
-                  src="https://yandex.ru/map-widget/v1/?ll=36.82918%2C56.087615&z=15&pt=36.82918,56.087615"
-                  title="Малое Исаково на карте — село Исаково, городской округ Солнечногорск"
-                  loading="lazy"
-                  className="absolute inset-0 h-full w-full border-0 grayscale saturate-0 contrast-[0.95]"
-                />
-              </div>
-              <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
-                <Image
-                  src={detail.aboutGallery[0] || '/placeholder.svg'}
-                  alt={`${settlement.name} — фото 1`}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 25vw"
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            {detail.aboutGallery.slice(1).map((src, i) => (
-              <div key={src} className="relative aspect-[4/3] overflow-hidden rounded-lg">
+            {detail.aboutGallery.map((src, i) => (
+              <div
+                key={src}
+                className={`relative overflow-hidden rounded-lg ${
+                  i === 0 ? 'col-span-2 aspect-[16/10]' : 'aspect-[4/3]'
+                }`}
+              >
                 <Image
                   src={src || '/placeholder.svg'}
-                  alt={`${settlement.name} — фото ${i + 2}`}
+                  alt={`${settlement.name} — фото ${i + 1}`}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
