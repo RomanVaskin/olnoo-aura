@@ -2,19 +2,28 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { Settlement } from '@/lib/data'
 
-export function SettlementCard({ settlement }: { settlement: Settlement }) {
-  return (
-    <Link
-      href={`/settlements/${settlement.slug}`}
-      className="group block overflow-hidden rounded-lg border border-border bg-card transition-colors hover:border-foreground/30"
-    >
+export function SettlementCard({
+  settlement,
+  respectClickability = false,
+}: {
+  settlement: Settlement
+  respectClickability?: boolean
+}) {
+  const clickable = !respectClickability || settlement.isClickable !== false
+
+  const content = (
+    <>
       <div className="relative aspect-[4/3] overflow-hidden">
         <Image
           src={settlement.image || '/placeholder.svg'}
           alt={settlement.name}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          className={
+            clickable
+              ? 'object-cover transition-transform duration-700 group-hover:scale-105'
+              : 'object-cover'
+          }
         />
         {settlement.tag && (
           <span className="absolute left-4 top-4 rounded-full bg-background/90 px-3 py-1 text-xs font-medium tracking-wide backdrop-blur">
@@ -35,6 +44,23 @@ export function SettlementCard({ settlement }: { settlement: Settlement }) {
           <span>{settlement.location}</span>
         </div>
       </div>
+    </>
+  )
+
+  if (!clickable) {
+    return (
+      <div className="block overflow-hidden rounded-lg border border-border bg-card">
+        {content}
+      </div>
+    )
+  }
+
+  return (
+    <Link
+      href={`/settlements/${settlement.slug}`}
+      className="group block overflow-hidden rounded-lg border border-border bg-card transition-colors hover:border-foreground/30"
+    >
+      {content}
     </Link>
   )
 }

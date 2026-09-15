@@ -8,6 +8,7 @@ export type Settlement = {
   location: string
   image: string
   tag?: string
+  isClickable?: boolean
   houses: number
   plots: number
 }
@@ -23,6 +24,7 @@ export const settlements: Settlement[] = [
     location: 'Истринское водохранилище',
     image: '/images/mi-hero.png',
     tag: 'Флагман',
+    isClickable: true,
     houses: 30,
     plots: 0,
   },
@@ -35,7 +37,8 @@ export const settlements: Settlement[] = [
     distance: '28 км от города',
     location: 'сосновый бор',
     image: '/images/settlement-3.png',
-    tag: 'Featured',
+    tag: 'Старт продаж 2027',
+    isClickable: true,
     houses: 31,
     plots: 20,
   },
@@ -48,6 +51,8 @@ export const settlements: Settlement[] = [
     distance: '42 км от города',
     location: 'сосновый лес',
     image: '/images/settlement-2.png',
+    tag: 'Старт продаж 2027',
+    isClickable: false,
     houses: 16,
     plots: 0,
   },
@@ -60,6 +65,8 @@ export const settlements: Settlement[] = [
     distance: '50 км от города',
     location: 'первая линия воды',
     image: '/images/ozernyy-masterplan-hero.webp',
+    tag: 'Старт продаж 2027',
+    isClickable: false,
     houses: 0,
     plots: 54,
   },

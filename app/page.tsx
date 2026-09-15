@@ -161,6 +161,7 @@ export default function HomePage() {
                     ? { ...s, image: '/images/sosnovy-bereg-hero.webp' }
                     : s
               }
+              respectClickability
             />
           ))}
         </div>
