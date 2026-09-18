@@ -19,11 +19,12 @@ const defaultGallery = [
 
 const galleryBySlug: Record<string, string[]> = {
   'sosnovy-bereg': [
-    '/IMG_5781.jpeg',
-    '/IMG_5782.jpeg',
-    '/IMG_5783.jpeg',
-    '/IMG_5784.jpeg',
-    '/IMG_5785.jpeg',
+    '/images/1инт.png',
+    '/images/2дом 2.png',
+    '/images/3инт3.png',
+    '/images/4инт2.png',
+    '/images/5общ зона нов.png',
+    '/images/6 площадка.png',
   ],
   ozernyy: [
     '/images/ozernyy-gallery-01-aerial.webp',
