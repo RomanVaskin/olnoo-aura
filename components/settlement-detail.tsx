@@ -321,11 +321,11 @@ export function SettlementDetailView({
             </p>
             <div className="relative mt-6 aspect-[4/3] overflow-hidden rounded-lg border border-border">
               <Image
-                src="/images/6 площадка.png"
+                src="/images/ChatGPT Image 14 сент. 2026 г., 15_36_42 2.png"
                 alt="Клубный комплекс"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
-                className="object-cover"
+                className="object-cover object-[60%_50%]"
               />
             </div>
           </div>
