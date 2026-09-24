@@ -96,7 +96,11 @@ export default async function DeveloperPage({
               <SettlementCard
                 key={s.slug}
                 settlement={
-                  s.slug === 'maloe-isakovo' ? { ...s, image: '/исаково нов2.png' } : s
+                  s.slug === 'maloe-isakovo'
+                    ? { ...s, image: '/исаково нов2.png' }
+                    : s.slug === 'sosnovy-bereg'
+                      ? { ...s, image: '/images/ozernyy-gallery-03-street.webp' }
+                      : s
                 }
               />
             ))}
