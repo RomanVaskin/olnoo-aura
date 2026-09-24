@@ -203,8 +203,8 @@ export default function HomePage() {
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <p className="eyebrow">Почему AURE ESTATES</p>
-            <h2 className="mt-4 font-serif text-3xl leading-tight text-balance lg:text-4xl">
-              Истринская долина. Дома, выбранные для жизни
+            <h2 className="mt-4 font-serif text-3xl leading-tight text-balance lg:text-[2.8vw] xl:text-4xl">
+              <span className="lg:block">Истринская долина.</span> Дома, выбранные для жизни
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
               Мы создаём коллекцию лучших домов и загородных проектов Истринской долины — у воды,
