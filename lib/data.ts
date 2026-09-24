@@ -317,7 +317,7 @@ export const settlementDetails: Record<string, SettlementDetail> = {
         tagline: 'Безупречный статус',
         area: '240 м²',
         price: 'от 34 млн ₽',
-        image: '/images/maloe-isakovo-model-milan.webp',
+        image: '/images/милан.png',
         highlights: [
           'Раздельные кухня-столовая и гостиная',
           'Гранд-терраса 33 м²',
