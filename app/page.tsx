@@ -204,11 +204,12 @@ export default function HomePage() {
           <div>
             <p className="eyebrow">Почему AURE ESTATES</p>
             <h2 className="mt-4 font-serif text-3xl leading-tight text-balance lg:text-4xl">
-              Не классифайд, а продукт для загородной недвижимости
+              Истринская долина. Дома, выбранные для жизни
             </h2>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground">
-              Мы соединяем покупателей, брокеров и застройщиков в одной системе: витрина,
-              подбор объектов, поток лидов, CRM и инструменты продвижения.
+              Мы создаём коллекцию лучших домов и загородных проектов Истринской долины — у воды,
+              среди леса и вдали от городской суеты. AURE ESTATES объединяет архитектуру, природу
+              и комфорт в одном из самых привлекательных направлений Подмосковья.
             </p>
             <div className="mt-8 overflow-hidden rounded-lg border border-border">
               <Image
