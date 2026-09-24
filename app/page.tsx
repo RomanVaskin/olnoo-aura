@@ -159,9 +159,12 @@ export default function HomePage() {
                   ? { ...s, image: '/images/maloe-isakovo-hero.webp' }
                   : s.slug === 'sosnovy-bereg'
                     ? { ...s, image: '/images/sosnovy-bereg-hero.webp' }
-                    : s
+                    : s.slug === 'lesnaya-usadba'
+                      ? { ...s, image: '/images/главная.png' }
+                      : s
               }
               respectClickability
+              singleLineType={s.slug === 'lesnaya-usadba'}
             />
           ))}
         </div>
