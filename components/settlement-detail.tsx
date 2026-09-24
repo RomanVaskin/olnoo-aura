@@ -100,8 +100,8 @@ export function SettlementDetailView({
 
       {/* Intro + gallery */}
       <section className="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-20">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-16">
-          <div>
+        <div className="grid gap-3 lg:grid-cols-[1fr_1.1fr]">
+          <div className="lg:pr-12">
             <p className="eyebrow">О посёлке</p>
             <h2 className="mt-3 font-serif text-3xl leading-tight text-balance lg:text-4xl">
               Счастье в малом
@@ -115,26 +115,35 @@ export function SettlementDetailView({
                 {p}
               </p>
             ))}
-            <div className="mt-8 h-[320px] overflow-hidden rounded-lg sm:h-[360px] lg:h-[420px]">
-              <iframe
-                src="https://yandex.ru/map-widget/v1/?ll=36.82918%2C56.087615&z=15&pt=36.82918,56.087615"
-                title="Малое Исаково на карте — село Исаково, городской округ Солнечногорск"
-                loading="lazy"
-                className="h-full w-full border-0 grayscale saturate-0 contrast-[0.9] brightness-[0.85]"
+          </div>
+          {detail.aboutGallery.slice(0, 1).map((src) => (
+            <div
+              key={src}
+              className="relative order-3 mt-9 aspect-[16/10] overflow-hidden rounded-lg lg:order-none lg:mt-0 lg:aspect-auto lg:min-h-[320px]"
+            >
+              <Image
+                src={src || '/placeholder.svg'}
+                alt={`${settlement.name} — фото 1`}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
               />
             </div>
+          ))}
+          <div className="order-2 mt-5 h-[340px] overflow-hidden rounded-lg lg:order-none lg:mt-0 lg:h-auto">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=36.82918%2C56.087615&z=15&pt=36.82918,56.087615"
+              title="Малое Исаково на карте — село Исаково, городской округ Солнечногорск"
+              loading="lazy"
+              className="block h-full w-full border-0 grayscale saturate-0 contrast-[1.4] brightness-[0.92]"
+            />
           </div>
-          <div className="grid grid-cols-2 gap-3">
-            {detail.aboutGallery.map((src, i) => (
-              <div
-                key={src}
-                className={`relative overflow-hidden rounded-lg ${
-                  i === 0 ? 'col-span-2 aspect-[16/10]' : 'aspect-[4/3]'
-                }`}
-              >
+          <div className="order-4 grid grid-cols-2 gap-3 lg:order-none">
+            {detail.aboutGallery.slice(1).map((src, i) => (
+              <div key={src} className="relative aspect-[4/3] overflow-hidden rounded-lg">
                 <Image
                   src={src || '/placeholder.svg'}
-                  alt={`${settlement.name} — фото ${i + 1}`}
+                  alt={`${settlement.name} — фото ${i + 2}`}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
