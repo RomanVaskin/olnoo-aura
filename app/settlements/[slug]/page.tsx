@@ -185,7 +185,9 @@ export default async function SettlementPage({
             <div className="mt-12">
               <p className="eyebrow">Расположение</p>
               <div className="mt-4 overflow-hidden rounded-lg border border-border">
-                <div className="relative aspect-[16/7]">
+                <div
+                  className={`relative ${slug === 'sosnovy-bereg' ? 'aspect-[4/3] sm:aspect-[16/7]' : 'aspect-[16/7]'}`}
+                >
                   <Image
                     src={
                       slug === 'ozernyy'
@@ -204,9 +206,11 @@ export default async function SettlementPage({
                     fill
                     sizes="100vw"
                     className={
-                      slug === 'ozernyy' || slug === 'sosnovy-bereg'
+                      slug === 'ozernyy'
                         ? 'object-contain bg-secondary'
-                        : 'object-cover'
+                        : slug === 'sosnovy-bereg'
+                          ? 'object-cover object-[center_30%]'
+                          : 'object-cover'
                     }
                   />
                   {slug !== 'ozernyy' && slug !== 'sosnovy-bereg' && (
