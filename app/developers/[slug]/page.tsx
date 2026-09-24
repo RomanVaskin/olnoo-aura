@@ -93,7 +93,12 @@ export default async function DeveloperPage({
           <h2 className="font-serif text-3xl">Посёлки застройщика</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {settlements.slice(0, 3).map((s) => (
-              <SettlementCard key={s.slug} settlement={s} />
+              <SettlementCard
+                key={s.slug}
+                settlement={
+                  s.slug === 'maloe-isakovo' ? { ...s, image: '/исаково нов2.png' } : s
+                }
+              />
             ))}
           </div>
         </div>
