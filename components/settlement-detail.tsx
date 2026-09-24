@@ -321,7 +321,7 @@ export function SettlementDetailView({
             </p>
             <div className="relative mt-6 aspect-[4/3] overflow-hidden rounded-lg border border-border">
               <Image
-                src="/images/ChatGPT Image 14 сент. 2026 г., 15_36_42 2.png"
+                src="/images/maloe-isakovo-club.webp"
                 alt="Клубный комплекс"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
