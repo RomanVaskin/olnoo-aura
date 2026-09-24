@@ -184,7 +184,12 @@ export default function HomePage() {
           />
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {houses.map((h) => (
-              <ListingCard key={h.id} listing={h} />
+              <ListingCard
+                key={h.id}
+                listing={
+                  h.id === 'h1' ? { ...h, image: '/images/maloe-isakovo-model-nice.webp' } : h
+                }
+              />
             ))}
             {plots.slice(0, 3).map((p) => (
               <ListingCard
