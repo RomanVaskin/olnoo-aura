@@ -30,18 +30,20 @@ export function ListingCard({
           <span className="whitespace-nowrap text-sm font-semibold">{listing.price}</span>
         </div>
         <p className="mt-1 text-sm text-muted-foreground">
-          {listing.settlement} · {listing.area}
+          {listing.area ? `${listing.settlement} · ${listing.area}` : listing.settlement}
         </p>
-        <div className="mt-4 flex flex-wrap gap-2 border-t border-border pt-4">
-          {listing.specs.map((spec) => (
-            <span
-              key={spec}
-              className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
-            >
-              {spec}
-            </span>
-          ))}
-        </div>
+        {listing.specs.length > 0 && (
+          <div className="mt-4 flex flex-wrap gap-2 border-t border-border pt-4">
+            {listing.specs.map((spec) => (
+              <span
+                key={spec}
+                className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
+              >
+                {spec}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )

@@ -8,7 +8,7 @@ import { ListingCard } from '@/components/listing-card'
 import { LeadForm } from '@/components/lead-form'
 import { SerifAmount } from '@/components/dashboard/widgets'
 import { SettlementDetailView } from '@/components/settlement-detail'
-import { settlements, houses, plots, settlementDetails } from '@/lib/data'
+import { settlements, houses, sosnovyBeregHouses, plots, settlementDetails } from '@/lib/data'
 
 const defaultGallery = [
   '/images/settlement-maloe-isakovo.png',
@@ -282,7 +282,7 @@ export default async function SettlementPage({
         <div className="mx-auto max-w-7xl px-5 py-16 lg:px-8">
           <h2 className="font-serif text-3xl">Доступные дома</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {houses.map((h) => (
+            {(slug === 'sosnovy-bereg' ? sosnovyBeregHouses : houses).map((h) => (
               <ListingCard key={h.id} listing={h} />
             ))}
           </div>

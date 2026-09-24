@@ -116,6 +116,41 @@ export const houses: Listing[] = [
   },
 ]
 
+// «Доступные дома» на странице /settlements/sosnovy-bereg.
+// Название, цена, площадь и характеристики — заполнить по данным заказчика.
+export const sosnovyBeregHouses: Listing[] = [
+  {
+    id: 'sb-h1',
+    title: '',
+    kind: 'Дом',
+    price: '',
+    area: '',
+    settlement: 'Сосновый Берег',
+    image: '/images/дом 1.png',
+    specs: [],
+  },
+  {
+    id: 'sb-h2',
+    title: '',
+    kind: 'Дом',
+    price: '',
+    area: '',
+    settlement: 'Сосновый Берег',
+    image: '/images/дом2.png',
+    specs: [],
+  },
+  {
+    id: 'sb-h3',
+    title: '',
+    kind: 'Дом',
+    price: '',
+    area: '',
+    settlement: 'Сосновый Берег',
+    image: '/images/дом3.png',
+    specs: [],
+  },
+]
+
 export const plots: Listing[] = [
   {
     id: 'p1',
