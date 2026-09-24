@@ -158,11 +158,16 @@ export default function HomePage() {
                 s.slug === 'maloe-isakovo'
                   ? { ...s, image: '/images/1зона отдыха терраса.png' }
                   : s.slug === 'sosnovy-bereg'
-                    ? { ...s, image: '/images/sosnovy-bereg-hero.webp' }
+                    ? {
+                        ...s,
+                        image: '/images/sosnovy-bereg-hero.webp',
+                        type: 'Закрытый клубный посёлок',
+                      }
                     : s
               }
               respectClickability
               singleLineType={s.slug === 'lesnaya-usadba'}
+              aligned
             />
           ))}
         </div>
