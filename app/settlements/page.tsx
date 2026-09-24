@@ -27,6 +27,7 @@ export default function SettlementsPage() {
                   ? { ...s, image: '/images/maloe-isakovo-overview.webp' }
                   : s
               }
+              respectClickability
             />
           ))}
         </div>
