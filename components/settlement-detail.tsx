@@ -136,7 +136,7 @@ export function SettlementDetailView({
               src="https://yandex.ru/map-widget/v1/?ll=36.82918%2C56.087615&z=15&pt=36.82918,56.087615"
               title="Малое Исаково на карте — село Исаково, городской округ Солнечногорск"
               loading="lazy"
-              className="block h-full w-full border-0 grayscale saturate-0 contrast-[1.4] brightness-[0.92]"
+              className="block h-full w-full border-0 [filter:grayscale(1)_saturate(0)_brightness(0.5)_contrast(1.4)]"
             />
           </div>
           <div className="order-4 grid grid-cols-2 gap-3 lg:order-none">
