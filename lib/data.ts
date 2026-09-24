@@ -35,7 +35,7 @@ export const settlements: Settlement[] = [
     format: 'Дома и участки',
     priceFrom: 'от 56 млн ₽',
     distance: '28 км от города',
-    location: 'сосновый бор',
+    location: 'сосновый лес',
     image: '/images/settlement-3.png',
     tag: 'Старт продаж 2027',
     isClickable: true,
