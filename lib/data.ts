@@ -179,7 +179,7 @@ export type SettlementDetail = {
   aboutGallery: string[]
   masterplan: {
     image: string
-    zones: { label: string; note: string }[]
+    zones: { label: string; note: string; marker?: { x: number; y: number } }[]
   }
   benefits: string[]
   infrastructure: { title: string; note: string }[]
@@ -222,10 +222,14 @@ export const settlementDetails: Record<string, SettlementDetail> = {
     masterplan: {
       image: '/images/maloe-isakovo-masterplan.webp',
       zones: [
-        { label: 'Первая очередь', note: 'Резиденции у входной группы' },
-        { label: 'Вторая очередь', note: 'Кварталы в глубине леса' },
-        { label: 'Третья очередь', note: 'Приватные участки у воды' },
-        { label: 'Досугово-развлекательный центр', note: 'Клубное сердце посёлка' },
+        { label: 'Первая очередь', note: 'Резиденции у входной группы', marker: { x: 48, y: 11 } },
+        { label: 'Вторая очередь', note: 'Кварталы в глубине леса', marker: { x: 24, y: 24 } },
+        { label: 'Третья очередь', note: 'Приватные участки у воды', marker: { x: 47, y: 70 } },
+        {
+          label: 'Досугово-развлекательный центр',
+          note: 'Клубное сердце посёлка',
+          marker: { x: 47, y: 37 },
+        },
         { label: 'Ландшафтный парк', note: 'Прогулочные маршруты и зоны отдыха' },
       ],
     },
