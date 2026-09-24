@@ -19,7 +19,10 @@ export function Masterplan({
 
   return (
     <div className="mt-8 grid gap-8 lg:grid-cols-[1.5fr_1fr] lg:gap-12">
-      <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border bg-secondary">
+      <div
+        className="relative self-center overflow-hidden rounded-lg border border-border bg-secondary"
+        style={{ aspectRatio: IMAGE_ASPECT }}
+      >
         <Image
           src={masterplan.image || '/placeholder.svg'}
           alt={alt}
