@@ -33,7 +33,7 @@ export default async function DeveloperPage({
       {/* Branded hero */}
       <section className="relative h-[56vh] min-h-[420px] w-full overflow-hidden">
         <Image
-          src="/images/settlement-3.png"
+          src="/images/sosnovy-bereg-masterplan.webp"
           alt="Посёлки застройщика GreenLine"
           fill
           priority
