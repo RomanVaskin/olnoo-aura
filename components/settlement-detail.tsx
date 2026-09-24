@@ -12,6 +12,7 @@ import {
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { LeadForm } from '@/components/lead-form'
+import { Masterplan } from '@/components/masterplan'
 import { SerifAmount } from '@/components/dashboard/widgets'
 import type { Settlement, SettlementDetail } from '@/lib/data'
 
@@ -177,30 +178,10 @@ export function SettlementDetailView({
       <section className="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-20">
         <p className="eyebrow">Генеральный план</p>
         <h2 className="mt-3 font-serif text-3xl text-balance lg:text-4xl">Мастер-план посёлка</h2>
-        <div className="mt-8 grid gap-8 lg:grid-cols-[1.5fr_1fr] lg:gap-12">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border bg-secondary">
-            <Image
-              src={detail.masterplan.image || '/placeholder.svg'}
-              alt="Генеральный план посёлка Малое Исаково"
-              fill
-              sizes="(max-width: 1024px) 100vw, 60vw"
-              className="object-contain"
-            />
-          </div>
-          <ul className="flex flex-col justify-center divide-y divide-border">
-            {detail.masterplan.zones.map((z, i) => (
-              <li key={z.label} className="flex items-start gap-4 py-4 first:pt-0 last:pb-0">
-                <span className="mt-0.5 font-serif text-lg text-muted-foreground">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <div>
-                  <p className="font-medium">{z.label}</p>
-                  <p className="text-sm text-muted-foreground">{z.note}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <Masterplan
+          masterplan={detail.masterplan}
+          alt="Генеральный план посёлка Малое Исаково"
+        />
       </section>
 
       {/* House models */}
