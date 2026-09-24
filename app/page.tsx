@@ -162,6 +162,7 @@ export default function HomePage() {
                     : s
               }
               respectClickability
+              singleLineType={s.slug === 'lesnaya-usadba'}
             />
           ))}
         </div>

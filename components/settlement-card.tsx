@@ -5,9 +5,11 @@ import type { Settlement } from '@/lib/data'
 export function SettlementCard({
   settlement,
   respectClickability = false,
+  singleLineType = false,
 }: {
   settlement: Settlement
   respectClickability?: boolean
+  singleLineType?: boolean
 }) {
   const clickable = !respectClickability || settlement.isClickable !== false
 
@@ -33,9 +35,17 @@ export function SettlementCard({
       </div>
       <div className="p-5">
         <div className="flex items-start justify-between gap-4">
-          <div>
+          <div className={singleLineType ? 'min-w-0' : undefined}>
             <h3 className="font-serif text-xl leading-tight">{settlement.name}</h3>
-            <p className="mt-1 text-sm text-muted-foreground">{settlement.type}</p>
+            <p
+              className={
+                singleLineType
+                  ? 'mt-1 whitespace-nowrap text-sm text-muted-foreground'
+                  : 'mt-1 text-sm text-muted-foreground'
+              }
+            >
+              {settlement.type}
+            </p>
           </div>
           <span className="whitespace-nowrap text-sm font-medium">{settlement.priceFrom}</span>
         </div>

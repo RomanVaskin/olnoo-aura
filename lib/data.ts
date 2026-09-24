@@ -50,7 +50,7 @@ export const settlements: Settlement[] = [
     priceFrom: 'от 18 млн ₽',
     distance: '42 км от города',
     location: 'сосновый лес',
-    image: '/images/settlement-2.png',
+    image: '/images/главная.png',
     tag: 'Продан',
     isClickable: false,
     houses: 16,
