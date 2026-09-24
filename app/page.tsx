@@ -156,7 +156,7 @@ export default function HomePage() {
               key={s.slug}
               settlement={
                 s.slug === 'maloe-isakovo'
-                  ? { ...s, image: '/images/maloe-isakovo-hero.webp' }
+                  ? { ...s, image: '/images/1зона отдыха терраса.png' }
                   : s.slug === 'sosnovy-bereg'
                     ? { ...s, image: '/images/sosnovy-bereg-hero.webp' }
                     : s
